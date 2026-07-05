@@ -1,4 +1,5 @@
 import { CtaSection } from "@/components/sections/cta-section";
+import { EvidenceSection } from "@/components/sections/evidence-section";
 import { MethodSteps } from "@/components/sections/method-steps";
 import { PageHero } from "@/components/sections/page-hero";
 import { SectorCards } from "@/components/sections/sector-cards";
@@ -9,7 +10,9 @@ import { methodSection } from "@/content/method";
 import { sectorsSection } from "@/content/sectors";
 import { servicesSection } from "@/content/services";
 
-export const metadata = createPageMetadata(homePageContent);
+export const metadata = createPageMetadata(homePageContent, {
+  absoluteTitle: true,
+});
 
 export default function Home() {
   return (
@@ -30,6 +33,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <EvidenceSection content={homePageContent.sections.operationalEvidence} />
       <ServiceCards {...servicesSection} />
       <MethodSteps {...methodSection} />
       <SectorCards {...sectorsSection} />

@@ -40,6 +40,17 @@ export type CardItem = {
   icon?: IconName;
 };
 
+export type EvidenceItem = {
+  title: string;
+  description: string;
+  items: string[];
+};
+
+export type EvidenceSection = {
+  intro: SectionIntro;
+  items: EvidenceItem[];
+};
+
 export type ServiceItem = CardItem & {
   icon: IconName;
 };

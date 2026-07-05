@@ -6,31 +6,31 @@ export const servicesSection: {
 } = {
   intro: {
     eyebrow: "Servicios",
-    title: "Palancas para mejorar con foco.",
+    title: "Palancas concretas para negocios que viven en la operación.",
   },
   items: [
     {
-      title: "Operaciones y procesos",
+      title: "Ritmo operativo y estándares",
       description:
-        "Ordenamos rutinas, responsabilidades e indicadores para que el equipo trabaje con menos fricción y más criterio.",
+        "Cuando cada turno resuelve a su manera, ayudamos a definir rutinas, roles y criterios de servicio para ganar consistencia sin volver rígido al equipo.",
       icon: "settings",
     },
     {
-      title: "Rentabilidad y reporting",
+      title: "Margen, costes y reporting",
       description:
-        "Convertimos datos dispersos en lectura ejecutiva: ventas, costes, márgenes, ocupación, mix y decisiones prioritarias.",
+        "Ordenamos ventas, compras, costes, ticket, ocupación y mix para que dirección vea dónde se escapa margen y qué decisiones priorizar.",
       icon: "barChart",
     },
     {
-      title: "Experiencia de cliente",
+      title: "Experiencia y recurrencia",
       description:
-        "Alineamos servicio, sala, recepción y seguimiento comercial para elevar la percepción sin perder eficiencia operativa.",
+        "Conectamos reservas, no-shows, reputación, servicio y seguimiento comercial para mejorar la experiencia y favorecer que el cliente vuelva.",
       icon: "concierge",
     },
     {
-      title: "Crecimiento comercial",
+      title: "Crecimiento con control",
       description:
-        "Diseñamos palancas de captación, recurrencia y ticket medio adaptadas al tipo de negocio y a su capacidad real.",
+        "Diseñamos acciones comerciales y de expansión que encajan con la capacidad operativa real, evitando crecer a costa de perder calidad o foco.",
       icon: "lineChart",
     },
   ],
@@ -41,13 +41,13 @@ export const servicesPageContent: PageContent = {
   seo: {
     title: "Servicios",
     description:
-      "Servicios de consultoría operativa, reporting, experiencia de cliente y crecimiento para negocios hospitality.",
+      "Servicios de consultoría operativa, reporting, experiencia de cliente y crecimiento para restaurantes, hoteles y grupos de hostelería.",
   },
   hero: {
     eyebrow: "Servicios",
-    title: "Palancas concretas para mejorar operación, margen y crecimiento.",
+    title: "Mejorar el negocio desde lo que ocurre cada día.",
     description:
-      "Trabajamos sobre los puntos que más condicionan el resultado del negocio: cómo se organiza el equipo, cómo se mide, cómo se vende y cómo se entrega la experiencia.",
+      "Trabajamos sobre las áreas que condicionan margen, servicio y crecimiento: cómo se organiza el equipo, qué se mide, cómo se decide y cómo se da seguimiento a las mejoras.",
   },
   cta: {
     title:
