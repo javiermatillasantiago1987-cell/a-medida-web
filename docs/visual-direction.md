@@ -31,9 +31,9 @@ These details should feel like reporting panels, diagnostic maps and service-pre
 
 ## Logo direction
 
-The brand signature uses an uppercase `AMEDIDA` wordmark inside a rounded rectangle frame. The first and last A use an open inverted-V motif without the horizontal bar, while the central letters stay bold and geometric for legibility. Both the wordmark and the thicker rounded frame use the teal-to-pink gradient so the logo connects directly with the broader visual system.
+The site currently uses the asset-based A-Medida logo from `public/brand/amedida-logo.png`. It is a transparent PNG with an uppercase `AMEDIDA` wordmark, a rounded rectangle frame and the teal-to-pink gradient identity.
 
-Use the wordmark as a clean brand signature in header and footer. Keep it restrained, avoid neon badge effects, and preserve enough clear space so the frame remains distinctive rather than decorative clutter.
+Use this asset as the clean brand signature in header and footer. Keep it restrained, avoid neon badge effects, preserve the transparent background and maintain enough clear space so the rounded frame remains distinctive rather than decorative clutter.
 
 ## Photography direction for later
 

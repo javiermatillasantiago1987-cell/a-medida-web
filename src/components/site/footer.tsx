@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="border-t border-dark bg-dark text-primary-foreground">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.2fr_1fr]">
         <div>
-          <AmedidaLogo size="large" />
+          <AmedidaLogo variant="footer" />
           <p className="mt-5 max-w-md text-sm leading-6 text-dark-muted">
             {siteContent.footer.description}
           </p>

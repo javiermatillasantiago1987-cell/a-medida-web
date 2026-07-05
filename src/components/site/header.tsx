@@ -26,7 +26,7 @@ export function Header() {
           href="/"
           onClick={closeMobileMenu}
         >
-          <AmedidaLogo size="compact" />
+          <AmedidaLogo variant="header" />
         </Link>
         <nav aria-label="Navegación principal" className="hidden md:block">
           <ul className="flex items-center gap-7 text-sm font-medium text-muted-foreground">
