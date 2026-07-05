@@ -45,7 +45,7 @@ export function CardGrid({
   const Heading = `h${headingLevel}` as "h2" | "h3";
 
   return (
-    <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6">
+    <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6">
       {intro ? (
         <div className="max-w-2xl">
           {intro.eyebrow ? (
@@ -53,7 +53,9 @@ export function CardGrid({
               {intro.eyebrow}
             </p>
           ) : null}
-          <h2 className="mt-3 text-3xl font-semibold">{intro.title}</h2>
+          <h2 className="mt-3 text-3xl font-semibold leading-tight">
+            {intro.title}
+          </h2>
           {intro.description ? (
             <p className="mt-4 text-sm leading-6 text-muted-foreground">
               {intro.description}
@@ -73,11 +75,13 @@ export function CardGrid({
 
           return (
             <article
-              className={`rounded-lg border bg-card p-6 ${shadow ? "shadow-sm" : ""}`}
+              className={`rounded-lg border bg-card p-6 transition-colors hover:border-primary/30 hover:bg-white ${shadow ? "shadow-sm" : ""}`}
               key={item.title}
             >
               {Icon ? (
-                <Icon aria-hidden="true" className="h-6 w-6 text-primary" />
+                <span className="flex h-10 w-10 items-center justify-center rounded-md bg-section text-primary">
+                  <Icon aria-hidden="true" className="h-5 w-5" />
+                </span>
               ) : null}
               <Heading className="mt-5 text-xl font-semibold">
                 {item.title}

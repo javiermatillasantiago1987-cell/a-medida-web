@@ -22,7 +22,7 @@ export function CtaSection({ content }: CtaSectionProps) {
         </div>
         <Button
           asChild
-          className="border-white/40 bg-transparent text-primary-foreground hover:bg-white hover:text-primary"
+          className="border-white/45 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary"
           size="lg"
           variant="outline"
         >

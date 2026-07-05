@@ -44,14 +44,14 @@ export default function ContactoPage() {
           <ul className="mt-6 space-y-4">
             {contactPageContent.contact.reasons.map((reason) => (
               <li
-                className="border-l pl-4 text-sm leading-6 text-muted-foreground"
+                className="border-l border-primary/30 pl-4 text-sm leading-6 text-muted-foreground"
                 key={reason}
               >
                 {reason}
               </li>
             ))}
           </ul>
-          <div className="mt-8 rounded-md bg-[#f4efe6] p-5">
+          <div className="mt-8 rounded-md border bg-section p-5">
             <p className="text-sm font-semibold">
               {contactPageContent.contact.response.title}
             </p>
@@ -60,7 +60,7 @@ export default function ContactoPage() {
             </p>
           </div>
         </div>
-        <div className="rounded-lg border bg-[#f4efe6] p-6">
+        <div className="rounded-lg border bg-section p-6">
           <h2 className="text-xl font-semibold">
             {contactPageContent.contact.nextSteps.title}
           </h2>

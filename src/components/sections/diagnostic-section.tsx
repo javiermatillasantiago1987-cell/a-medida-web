@@ -28,13 +28,13 @@ export function DiagnosticSection({ content }: DiagnosticSectionProps) {
             </p>
           ) : null}
         </div>
-        <div className="rounded-lg border bg-card">
+        <div className="rounded-lg border bg-card shadow-sm">
           {content.items.map((item, index) => (
             <article
               className="grid gap-4 border-b p-5 last:border-b-0 sm:grid-cols-[3rem_1fr]"
               key={item.title}
             >
-              <p className="text-sm font-semibold text-primary">
+              <p className="flex h-9 w-9 items-center justify-center rounded-md bg-section text-sm font-semibold text-primary">
                 {String(index + 1).padStart(2, "0")}
               </p>
               <div>

@@ -7,8 +7,8 @@ type MethodStepsProps = {
 
 export function MethodSteps({ intro, items }: MethodStepsProps) {
   return (
-    <section className="bg-[#f4efe6]">
-      <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6">
+    <section className="bg-section">
+      <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6">
         <div className="max-w-2xl">
           {intro.eyebrow ? (
             <p className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">
@@ -24,7 +24,7 @@ export function MethodSteps({ intro, items }: MethodStepsProps) {
         </div>
         <div className="mt-10 grid gap-5 md:grid-cols-4">
           {items.map((step, index) => (
-            <article className="border-l pl-5" key={step.title}>
+            <article className="border-l border-primary/30 pl-5" key={step.title}>
               <p className="text-sm font-semibold text-primary">
                 {String(index + 1).padStart(2, "0")}
               </p>

@@ -6,7 +6,7 @@ type EvidenceSectionProps = {
 
 export function EvidenceSection({ content }: EvidenceSectionProps) {
   return (
-    <section className="border-y bg-[#f4efe6]">
+    <section className="border-y bg-section">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[0.85fr_1.15fr] md:py-16">
         <div>
           {content.intro.eyebrow ? (
@@ -23,7 +23,7 @@ export function EvidenceSection({ content }: EvidenceSectionProps) {
             </p>
           ) : null}
         </div>
-        <div className="divide-y rounded-lg border bg-background">
+        <div className="divide-y rounded-lg border bg-background shadow-sm">
           {content.items.map((item) => (
             <article className="grid gap-4 p-5 sm:grid-cols-[0.7fr_1fr]" key={item.title}>
               <div>
@@ -34,7 +34,7 @@ export function EvidenceSection({ content }: EvidenceSectionProps) {
               </div>
               <ul className="grid gap-2 text-sm leading-6 text-muted-foreground">
                 {item.items.map((detail) => (
-                  <li className="border-l pl-3" key={detail}>
+                  <li className="border-l border-primary/30 pl-3" key={detail}>
                     {detail}
                   </li>
                 ))}
