@@ -12,19 +12,29 @@ export function PageHero({
   description,
   primaryCta,
   secondaryCta,
+  proofPoints,
 }: PageHeroProps) {
   return (
     <section className="border-b bg-[#f4efe6]">
-      <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[1.15fr_0.85fr] md:items-end md:py-24">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[1.2fr_0.8fr] md:items-end md:py-24">
         <div>
           <p className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">
             {eyebrow}
           </p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
+          <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl">
             {title}
           </h1>
+          {proofPoints?.length ? (
+            <div className="mt-8 grid gap-3 text-sm leading-6 text-muted-foreground sm:grid-cols-3">
+              {proofPoints.map((point) => (
+                <p className="border-l border-primary/35 pl-4" key={point}>
+                  {point}
+                </p>
+              ))}
+            </div>
+          ) : null}
         </div>
-        <div className="md:pb-2">
+        <div className="rounded-lg border bg-background/80 p-5 shadow-sm md:p-6">
           <p className="text-base leading-7 text-muted-foreground sm:text-lg">
             {description}
           </p>

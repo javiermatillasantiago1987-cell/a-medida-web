@@ -14,6 +14,7 @@ export type HeroContent = {
   description: string;
   primaryCta?: CTA;
   secondaryCta?: CTA;
+  proofPoints?: string[];
 };
 
 export type SectionIntro = {
@@ -49,6 +50,30 @@ export type EvidenceItem = {
 export type EvidenceSection = {
   intro: SectionIntro;
   items: EvidenceItem[];
+};
+
+export type DiagnosticItem = {
+  title: string;
+  description: string;
+};
+
+export type DiagnosticSection = {
+  slug: string;
+  intro: SectionIntro;
+  items: DiagnosticItem[];
+  summary?: string;
+};
+
+export type RhythmStep = {
+  title: string;
+  description: string;
+};
+
+export type OperatingRhythmSection = {
+  slug: string;
+  intro: SectionIntro;
+  items: RhythmStep[];
+  note?: string;
 };
 
 export type ServiceItem = CardItem & {
