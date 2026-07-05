@@ -2,7 +2,8 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { navItems } from "@/lib/site-content";
+import { headerCta, navigationItems } from "@/content/navigation";
+import { siteContent } from "@/content/site";
 
 export function Header() {
   return (
@@ -12,13 +13,16 @@ export function Header() {
           href="/"
           className="text-base font-semibold tracking-[0.12em] text-primary uppercase"
         >
-          A-Medida
+          {siteContent.name}
         </Link>
         <nav aria-label="Navegación principal" className="hidden md:block">
           <ul className="flex items-center gap-7 text-sm text-muted-foreground">
-            {navItems.map((item) => (
+            {navigationItems.map((item) => (
               <li key={item.href}>
-                <Link className="transition-colors hover:text-foreground" href={item.href}>
+                <Link
+                  className="transition-colors hover:text-foreground"
+                  href={item.href}
+                >
                   {item.label}
                 </Link>
               </li>
@@ -27,7 +31,7 @@ export function Header() {
         </nav>
         <div className="hidden md:block">
           <Button asChild size="sm">
-            <Link href="/contacto">Hablar del proyecto</Link>
+            <Link href={headerCta.href}>{headerCta.label}</Link>
           </Button>
         </div>
         <Button

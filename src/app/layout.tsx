@@ -3,22 +3,21 @@ import "./globals.css";
 
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
+import { siteContent } from "@/content/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://a-medida.es"),
+  metadataBase: new URL(siteContent.url),
   title: {
-    default: "A-Medida | Consultoría operativa para hospitality",
-    template: "%s | A-Medida",
+    default: siteContent.defaultSeo.title,
+    template: `%s | ${siteContent.name}`,
   },
-  description:
-    "Consultoría para restaurantes, hoteles y grupos de hostelería que quieren mejorar operaciones, rentabilidad, experiencia de cliente y crecimiento.",
+  description: siteContent.defaultSeo.description,
   openGraph: {
-    title: "A-Medida | Consultoría operativa para hospitality",
-    description:
-      "A-Medida ayuda a negocios de hospitality a ordenar operaciones, reporting, experiencia y crecimiento.",
-    url: "https://a-medida.es",
-    siteName: "A-Medida",
-    locale: "es_ES",
+    title: siteContent.defaultSeo.title,
+    description: siteContent.openGraphDescription,
+    url: siteContent.url,
+    siteName: siteContent.name,
+    locale: siteContent.locale,
     type: "website",
   },
 };

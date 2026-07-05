@@ -2,21 +2,16 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import type { HeroContent } from "@/content/types";
 
-type PageHeroProps = {
-  eyebrow: string;
-  title: string;
-  description: string;
-  ctaLabel?: string;
-  ctaHref?: string;
-};
+type PageHeroProps = HeroContent;
 
 export function PageHero({
   eyebrow,
   title,
   description,
-  ctaLabel,
-  ctaHref,
+  primaryCta,
+  secondaryCta,
 }: PageHeroProps) {
   return (
     <section className="border-b bg-[#f4efe6]">
@@ -33,13 +28,22 @@ export function PageHero({
           <p className="text-base leading-7 text-muted-foreground sm:text-lg">
             {description}
           </p>
-          {ctaLabel && ctaHref ? (
-            <Button asChild className="mt-7" size="lg">
-              <Link href={ctaHref}>
-                {ctaLabel}
-                <ArrowRight aria-hidden="true" className="h-4 w-4" />
-              </Link>
-            </Button>
+          {primaryCta || secondaryCta ? (
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              {primaryCta ? (
+                <Button asChild size="lg">
+                  <Link href={primaryCta.href}>
+                    {primaryCta.label}
+                    <ArrowRight aria-hidden="true" className="h-4 w-4" />
+                  </Link>
+                </Button>
+              ) : null}
+              {secondaryCta ? (
+                <Button asChild size="lg" variant="outline">
+                  <Link href={secondaryCta.href}>{secondaryCta.label}</Link>
+                </Button>
+              ) : null}
+            </div>
           ) : null}
         </div>
       </div>
