@@ -28,7 +28,8 @@ export function DiagnosticSection({ content }: DiagnosticSectionProps) {
             </p>
           ) : null}
         </div>
-        <div className="gradient-panel rounded-lg border bg-card shadow-sm">
+        <div className="gradient-panel relative overflow-hidden rounded-lg border bg-card shadow-sm">
+          <span aria-hidden="true" className="absolute inset-x-0 top-0 h-1 accent-rule" />
           {content.items.map((item, index) => (
             <article
               className="grid gap-4 border-b p-5 last:border-b-0 sm:grid-cols-[3rem_1fr]"

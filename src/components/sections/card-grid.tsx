@@ -79,7 +79,7 @@ export function CardGrid({
               key={item.title}
             >
               {Icon ? (
-                <span className="flex h-10 w-10 items-center justify-center rounded-md bg-teal-soft text-primary transition-colors group-hover:bg-pink-soft">
+                <span className="diagnostic-marker flex h-10 w-10 items-center justify-center rounded-md bg-teal-soft text-primary transition-colors group-hover:bg-pink-soft">
                   <Icon aria-hidden="true" className="h-5 w-5" />
                 </span>
               ) : null}

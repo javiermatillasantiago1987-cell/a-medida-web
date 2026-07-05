@@ -23,7 +23,8 @@ export function EvidenceSection({ content }: EvidenceSectionProps) {
             </p>
           ) : null}
         </div>
-        <div className="divide-y rounded-lg border bg-background/85 shadow-sm">
+        <div className="relative divide-y overflow-hidden rounded-lg border bg-background/85 shadow-sm">
+          <span aria-hidden="true" className="absolute inset-x-0 top-0 h-1 accent-rule" />
           {content.items.map((item) => (
             <article className="grid gap-4 p-5 sm:grid-cols-[0.7fr_1fr]" key={item.title}>
               <div>

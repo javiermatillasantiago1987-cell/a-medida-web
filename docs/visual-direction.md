@@ -6,6 +6,8 @@ A-Medida should feel senior, warm, operational, hospitality-focused and premium 
 
 The site uses restrained teal and pink accents through CSS tokens in `src/app/globals.css`.
 
+The first gradient implementation was intentionally subtle. The current system uses more visible branded gradient moments in the homepage hero, CTA band and selected operational panels so the identity is recognizable during review while the main reading surfaces remain calm.
+
 - Teal should carry operational clarity, control, reporting and calm decision-making.
 - Pink should add warmth, hospitality and human texture.
 - Gradients should be used as accents, not as the whole personality of the page.

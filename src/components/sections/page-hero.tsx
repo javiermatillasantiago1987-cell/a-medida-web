@@ -35,12 +35,13 @@ export function PageHero({
             </div>
           ) : null}
         </div>
-        <div className="gradient-panel rounded-lg border bg-card/85 p-5 shadow-sm md:p-6">
+        <div className="gradient-panel relative overflow-hidden rounded-lg border bg-card/85 p-5 shadow-md md:p-6">
+          <span aria-hidden="true" className="absolute inset-x-0 top-0 h-1 accent-rule" />
           <p className="text-base leading-7 text-muted-foreground sm:text-lg">
             {description}
           </p>
           {visualPanel ? (
-            <div className="mt-6 rounded-md border bg-background/70 p-4">
+            <div className="mt-6 rounded-md border bg-background/75 p-4 shadow-sm">
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-primary uppercase">
@@ -48,11 +49,11 @@ export function PageHero({
                   </p>
                   <p className="mt-1 text-sm font-semibold">{visualPanel.title}</p>
                 </div>
-                <span aria-hidden="true" className="block h-2 w-10 rounded-full accent-rule" />
+                <span aria-hidden="true" className="block h-2 w-16 rounded-full accent-rule" />
               </div>
               <div className="mt-4 grid grid-cols-2 gap-2">
                 {visualPanel.items.map((item) => (
-                  <div className="diagnostic-marker rounded-md bg-card p-3" key={item.label}>
+                  <div className="diagnostic-marker rounded-md bg-card p-3 shadow-sm" key={item.label}>
                     <p className="text-xs font-semibold text-foreground">{item.label}</p>
                     <p className="mt-1 text-xs leading-5 text-muted-foreground">
                       {item.value}

@@ -11,9 +11,16 @@ type CtaSectionProps = {
 export function CtaSection({ content }: CtaSectionProps) {
   return (
     <section
-      className="bg-primary text-primary-foreground"
-      style={{ backgroundImage: "var(--gradient-teal-pink)" }}
+      className="relative overflow-hidden bg-primary text-primary-foreground"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 12% 18%, rgba(255, 250, 240, 0.2), transparent 26%), radial-gradient(circle at 90% 0%, rgba(255, 250, 240, 0.14), transparent 28%), var(--gradient-teal-pink)",
+      }}
     >
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-px bg-primary-foreground/45"
+      />
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-[1fr_auto] md:items-center">
         <div>
           <h2 className="max-w-3xl text-3xl font-semibold leading-tight">

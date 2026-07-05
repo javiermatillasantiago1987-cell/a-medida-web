@@ -13,11 +13,11 @@ export function OperatingRhythmSection({ content }: OperatingRhythmSectionProps)
       />
       <div
         aria-hidden="true"
-        className="absolute -right-24 top-10 h-64 w-64 rounded-full bg-pink/20 blur-3xl"
+        className="absolute -right-20 top-8 h-72 w-72 rounded-full bg-pink/30 blur-3xl"
       />
       <div
         aria-hidden="true"
-        className="absolute -left-24 bottom-8 h-64 w-64 rounded-full bg-teal/20 blur-3xl"
+        className="absolute -left-20 bottom-4 h-72 w-72 rounded-full bg-teal/30 blur-3xl"
       />
       <div className="relative mx-auto w-full max-w-6xl px-4 py-16 sm:px-6">
         <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr] md:items-end">
