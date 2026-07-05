@@ -64,9 +64,13 @@ export function PageHero({
             </div>
           ) : null}
           {primaryCta || secondaryCta ? (
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-7 flex flex-col flex-wrap gap-3 sm:flex-row sm:items-center">
               {primaryCta ? (
-                <Button asChild size="lg">
+                <Button
+                  asChild
+                  className="w-full max-w-full whitespace-normal sm:w-auto"
+                  size="lg"
+                >
                   <Link href={primaryCta.href}>
                     {primaryCta.label}
                     <ArrowRight aria-hidden="true" className="h-4 w-4" />
@@ -74,7 +78,12 @@ export function PageHero({
                 </Button>
               ) : null}
               {secondaryCta ? (
-                <Button asChild size="lg" variant="outline">
+                <Button
+                  asChild
+                  className="w-full max-w-full whitespace-normal sm:w-auto"
+                  size="lg"
+                  variant="outline"
+                >
                   <Link href={secondaryCta.href}>{secondaryCta.label}</Link>
                 </Button>
               ) : null}
