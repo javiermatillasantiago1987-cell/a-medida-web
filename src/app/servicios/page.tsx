@@ -1,8 +1,13 @@
 import { CtaSection } from "@/components/sections/cta-section";
 import { PageHero } from "@/components/sections/page-hero";
 import { ServiceCards } from "@/components/sections/service-cards";
+import { ServiceEcosystemSection } from "@/components/sections/service-ecosystem-section";
 import { createPageMetadata } from "@/content/metadata";
-import { servicesPageContent, servicesSection } from "@/content/services";
+import {
+  serviceEcosystemSection,
+  servicesPageContent,
+  servicesSection,
+} from "@/content/services";
 
 export const metadata = createPageMetadata(servicesPageContent);
 
@@ -11,6 +16,7 @@ export default function ServiciosPage() {
     <>
       <PageHero {...servicesPageContent.hero} />
       <ServiceCards {...servicesSection} />
+      <ServiceEcosystemSection content={serviceEcosystemSection} />
       {servicesPageContent.cta ? (
         <CtaSection content={servicesPageContent.cta} />
       ) : null}

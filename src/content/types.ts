@@ -92,6 +92,18 @@ export type ServiceItem = CardItem & {
   icon: IconName;
 };
 
+export type ServiceEcosystemGroup = {
+  title: string;
+  description: string;
+  items: string[];
+};
+
+export type ServiceEcosystemSection = {
+  intro: SectionIntro;
+  groups: ServiceEcosystemGroup[];
+  note?: string;
+};
+
 export type MethodStep = {
   title: string;
   description: string;

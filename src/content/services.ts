@@ -1,4 +1,9 @@
-import type { PageContent, SectionIntro, ServiceItem } from "@/content/types";
+import type {
+  PageContent,
+  SectionIntro,
+  ServiceEcosystemSection,
+  ServiceItem,
+} from "@/content/types";
 
 export const servicesSection: {
   intro: SectionIntro;
@@ -34,6 +39,63 @@ export const servicesSection: {
       icon: "lineChart",
     },
   ],
+};
+
+export const serviceEcosystemSection: ServiceEcosystemSection = {
+  intro: {
+    eyebrow: "Ecosistema de servicios",
+    title: "Áreas donde A-Medida puede intervenir",
+    description:
+      "A-Medida trabaja sobre las piezas que condicionan el rendimiento real de un negocio hostelero: operación, equipo, rentabilidad, comercialización, espacios, compras, digitalización y experiencia de cliente.",
+  },
+  groups: [
+    {
+      title: "Operación y equipo",
+      description:
+        "Estandarización de rutinas, formación de equipos, seguridad alimentaria, propuesta gastronómica y consistencia del servicio.",
+      items: [
+        "Operativas y formaciones",
+        "RRHH",
+        "Seguridad alimentaria",
+        "Gastronomía",
+      ],
+    },
+    {
+      title: "Rentabilidad y control",
+      description:
+        "Control de costes, compras, márgenes, visibilidad de datos, digitalización útil y seguimiento de prioridades.",
+      items: [
+        "Control financiero",
+        "Compras & digitalización",
+        "Reporting",
+        "Seguimiento de acciones",
+      ],
+    },
+    {
+      title: "Crecimiento y cliente",
+      description:
+        "Acciones comerciales, comunicación, percepción de marca, fidelización y mejora de la experiencia del cliente.",
+      items: [
+        "Marketing & comunicación",
+        "Comercialización externa",
+        "Experiencia de cliente",
+        "Recurrencia",
+      ],
+    },
+    {
+      title: "Espacios y expansión",
+      description:
+        "Acompañamiento en decisiones de localización, adecuación de espacios, reformas, aperturas y evolución del concepto.",
+      items: [
+        "Sector inmobiliario",
+        "Interiorismo & reformas",
+        "Aperturas",
+        "Reposicionamiento de locales",
+      ],
+    },
+  ],
+  note:
+    "No todos los proyectos necesitan actuar en todas las áreas. El diagnóstico define qué palancas conviene priorizar y cómo conectarlas en un modelo operativo útil.",
 };
 
 export const servicesPageContent: PageContent = {

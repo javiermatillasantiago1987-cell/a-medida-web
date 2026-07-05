@@ -7,7 +7,7 @@ Website content lives in `src/content`. The site is still static and code-manage
 - Global site metadata and footer copy: `src/content/site.ts`
 - Header and footer navigation: `src/content/navigation.ts`
 - Homepage content: `src/content/home.ts`
-- Services page and service cards: `src/content/services.ts`
+- Services page, service cards and service ecosystem groups: `src/content/services.ts`
 - Method page and method steps: `src/content/method.ts`
 - Sectors page and sector cards: `src/content/sectors.ts`
 - Technology page content: `src/content/technology.ts`
@@ -49,6 +49,8 @@ Page files compose sections from these objects. Components should receive conten
 The content layer uses stable fields such as `slug`, `seo`, `hero`, `sections`, `items`, and `cta`. These fields map cleanly to future document types or entries in WordPress headless, Sanity, Storyblok, Payload, Contentful, or another CMS.
 
 Icon values are stored as string keys rather than React components. A future CMS can store the same keys, while the frontend keeps control over the actual icon components.
+
+Service ecosystem content is grouped into strategic intervention areas with `intro`, `groups`, `items` and optional contextual notes. This preserves broad service coverage without turning the services page into a flat catalogue.
 
 ## Future CMS integration
 
