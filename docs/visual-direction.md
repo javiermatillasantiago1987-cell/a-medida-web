@@ -29,6 +29,12 @@ Use lightweight details that suggest operational tools:
 
 These details should feel like reporting panels, diagnostic maps and service-prep notes rather than decoration for its own sake.
 
+## Logo direction
+
+The brand signature uses an uppercase `AMEDIDA` wordmark inside a rounded rectangle frame. The first and last A use an open inverted-V motif without the horizontal bar, while the central letters stay bold and geometric for legibility. Both the wordmark and the thicker rounded frame use the teal-to-pink gradient so the logo connects directly with the broader visual system.
+
+Use the wordmark as a clean brand signature in header and footer. Keep it restrained, avoid neon badge effects, and preserve enough clear space so the frame remains distinctive rather than decorative clutter.
+
 ## Photography direction for later
 
 Do not use stock imagery. Avoid posed chefs, generic waiters, fake hotel smiles, perfect corporate hospitality scenes and glossy lifestyle images.

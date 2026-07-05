@@ -4,9 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
+import { AmedidaLogo } from "@/components/brand/amedida-logo";
 import { Button } from "@/components/ui/button";
 import { headerCta, navigationItems } from "@/content/navigation";
-import { siteContent } from "@/content/site";
 
 const mobileMenuId = "mobile-navigation";
 
@@ -21,12 +21,12 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link
-          className="flex items-center gap-3 text-base font-semibold tracking-[0.12em] text-primary uppercase"
+          aria-label="A-Medida"
+          className="block"
           href="/"
           onClick={closeMobileMenu}
         >
-          <span aria-hidden="true" className="block h-2 w-2 rounded-full accent-rule" />
-          {siteContent.name}
+          <AmedidaLogo size="compact" />
         </Link>
         <nav aria-label="Navegación principal" className="hidden md:block">
           <ul className="flex items-center gap-7 text-sm font-medium text-muted-foreground">
