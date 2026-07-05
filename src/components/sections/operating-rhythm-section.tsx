@@ -6,8 +6,20 @@ type OperatingRhythmSectionProps = {
 
 export function OperatingRhythmSection({ content }: OperatingRhythmSectionProps) {
   return (
-    <section className="bg-dark text-primary-foreground" id={content.slug}>
-      <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6">
+    <section className="relative overflow-hidden bg-dark text-primary-foreground" id={content.slug}>
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-px accent-rule opacity-80"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute -right-24 top-10 h-64 w-64 rounded-full bg-pink/20 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute -left-24 bottom-8 h-64 w-64 rounded-full bg-teal/20 blur-3xl"
+      />
+      <div className="relative mx-auto w-full max-w-6xl px-4 py-16 sm:px-6">
         <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr] md:items-end">
           <div>
             {content.intro.eyebrow ? (

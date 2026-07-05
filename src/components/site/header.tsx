@@ -25,7 +25,7 @@ export function Header() {
           href="/"
           onClick={closeMobileMenu}
         >
-          <span aria-hidden="true" className="h-2 w-2 rounded-full bg-accent" />
+          <span aria-hidden="true" className="block h-2 w-2 rounded-full accent-rule" />
           {siteContent.name}
         </Link>
         <nav aria-label="Navegación principal" className="hidden md:block">

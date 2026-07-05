@@ -10,7 +10,10 @@ type CtaSectionProps = {
 
 export function CtaSection({ content }: CtaSectionProps) {
   return (
-    <section className="bg-primary text-primary-foreground">
+    <section
+      className="bg-primary text-primary-foreground"
+      style={{ backgroundImage: "var(--gradient-teal-pink)" }}
+    >
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-[1fr_auto] md:items-center">
         <div>
           <h2 className="max-w-3xl text-3xl font-semibold leading-tight">

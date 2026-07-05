@@ -51,7 +51,7 @@ export default function ContactoPage() {
               </li>
             ))}
           </ul>
-          <div className="mt-8 rounded-md border bg-section p-5">
+          <div className="gradient-panel mt-8 rounded-md border bg-section p-5">
             <p className="text-sm font-semibold">
               {contactPageContent.contact.response.title}
             </p>
@@ -67,7 +67,7 @@ export default function ContactoPage() {
           <div className="mt-5 grid gap-4">
             {contactPageContent.contact.nextSteps.items.map((step, index) => (
               <article className="grid gap-3 sm:grid-cols-[2.25rem_1fr]" key={step.title}>
-                <p className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-sm font-semibold text-primary-foreground">
+                <p className="flex h-9 w-9 items-center justify-center rounded-md text-sm font-semibold text-primary-foreground accent-rule">
                   {String(index + 1).padStart(2, "0")}
                 </p>
                 <div>

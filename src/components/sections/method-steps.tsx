@@ -25,7 +25,7 @@ export function MethodSteps({ intro, items }: MethodStepsProps) {
         <div className="mt-10 grid gap-5 md:grid-cols-4">
           {items.map((step, index) => (
             <article className="border-l border-primary/30 pl-5" key={step.title}>
-              <p className="text-sm font-semibold text-primary">
+              <p className="diagnostic-marker inline-flex h-9 min-w-9 items-center justify-center rounded-md px-2 text-sm font-semibold text-primary">
                 {String(index + 1).padStart(2, "0")}
               </p>
               <h3 className="mt-4 text-lg font-semibold">{step.title}</h3>

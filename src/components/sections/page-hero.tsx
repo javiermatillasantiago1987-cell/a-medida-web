@@ -13,10 +13,11 @@ export function PageHero({
   primaryCta,
   secondaryCta,
   proofPoints,
+  visualPanel,
 }: PageHeroProps) {
   return (
-    <section className="border-b bg-section">
-      <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[1.2fr_0.8fr] md:items-end md:py-24">
+    <section className="surface-hero border-b">
+      <div className="relative mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[1.2fr_0.8fr] md:items-end md:py-24">
         <div>
           <p className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">
             {eyebrow}
@@ -34,10 +35,33 @@ export function PageHero({
             </div>
           ) : null}
         </div>
-        <div className="rounded-lg border bg-card/85 p-5 shadow-sm md:p-6">
+        <div className="gradient-panel rounded-lg border bg-card/85 p-5 shadow-sm md:p-6">
           <p className="text-base leading-7 text-muted-foreground sm:text-lg">
             {description}
           </p>
+          {visualPanel ? (
+            <div className="mt-6 rounded-md border bg-background/70 p-4">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-primary uppercase">
+                    {visualPanel.eyebrow}
+                  </p>
+                  <p className="mt-1 text-sm font-semibold">{visualPanel.title}</p>
+                </div>
+                <span aria-hidden="true" className="block h-2 w-10 rounded-full accent-rule" />
+              </div>
+              <div className="mt-4 grid grid-cols-2 gap-2">
+                {visualPanel.items.map((item) => (
+                  <div className="diagnostic-marker rounded-md bg-card p-3" key={item.label}>
+                    <p className="text-xs font-semibold text-foreground">{item.label}</p>
+                    <p className="mt-1 text-xs leading-5 text-muted-foreground">
+                      {item.value}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : null}
           {primaryCta || secondaryCta ? (
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               {primaryCta ? (

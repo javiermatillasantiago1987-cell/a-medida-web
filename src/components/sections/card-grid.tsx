@@ -75,11 +75,11 @@ export function CardGrid({
 
           return (
             <article
-              className={`rounded-lg border bg-card p-6 transition-colors hover:border-primary/30 hover:bg-white ${shadow ? "shadow-sm" : ""}`}
+              className={`group rounded-lg border bg-card p-6 transition-colors hover:border-primary/30 hover:bg-white ${shadow ? "shadow-sm" : ""}`}
               key={item.title}
             >
               {Icon ? (
-                <span className="flex h-10 w-10 items-center justify-center rounded-md bg-section text-primary">
+                <span className="flex h-10 w-10 items-center justify-center rounded-md bg-teal-soft text-primary transition-colors group-hover:bg-pink-soft">
                   <Icon aria-hidden="true" className="h-5 w-5" />
                 </span>
               ) : null}
@@ -89,6 +89,7 @@ export function CardGrid({
               <p className="mt-3 text-sm leading-6 text-muted-foreground">
                 {item.description}
               </p>
+              <span aria-hidden="true" className="mt-6 block h-px w-16 accent-rule" />
             </article>
           );
         })}

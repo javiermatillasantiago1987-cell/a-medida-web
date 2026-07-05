@@ -15,6 +15,12 @@
   --muted-foreground: #6a6258;
   --accent: #c9b58f;
   --accent-foreground: #2b241a;
+  --teal: #0f6f68;
+  --teal-soft: #d9eee9;
+  --teal-foreground: #f7fffb;
+  --pink: #b85d7b;
+  --pink-soft: #f3dde4;
+  --pink-foreground: #fff8fb;
   --destructive: #8f2d2d;
   --destructive-foreground: #fff7f2;
   --border: #d8cdbc;
@@ -24,6 +30,16 @@
   --section-strong: #ebe0cf;
   --dark: #241f1a;
   --dark-muted: #d8c8ad;
+  --gradient-teal-pink: linear-gradient(135deg, #0f6f68 0%, #8a756c 46%, #b85d7b 100%);
+  --gradient-soft: radial-gradient(circle at 18% 18%, rgba(15, 111, 104, 0.18), transparent 32%),
+    radial-gradient(circle at 82% 8%, rgba(184, 93, 123, 0.14), transparent 30%),
+    linear-gradient(135deg, #fbf8f1 0%, #f3ecdf 48%, #f7edf0 100%);
+  --gradient-hero: radial-gradient(circle at 10% 5%, rgba(15, 111, 104, 0.18), transparent 28%),
+    radial-gradient(circle at 90% 12%, rgba(184, 93, 123, 0.16), transparent 28%),
+    linear-gradient(145deg, #fbf8f1 0%, #f0e5d6 56%, #f5e8ec 100%);
+  --gradient-panel: linear-gradient(145deg, rgba(255, 253, 248, 0.96), rgba(251, 248, 241, 0.9)),
+    radial-gradient(circle at 0% 0%, rgba(15, 111, 104, 0.16), transparent 30%),
+    radial-gradient(circle at 100% 0%, rgba(184, 93, 123, 0.12), transparent 32%);
   --radius: 0.5rem;
 }
 
@@ -42,6 +58,12 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-teal: var(--teal);
+  --color-teal-soft: var(--teal-soft);
+  --color-teal-foreground: var(--teal-foreground);
+  --color-pink: var(--pink);
+  --color-pink-soft: var(--pink-soft);
+  --color-pink-foreground: var(--pink-foreground);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -98,4 +120,41 @@ h1,
 h2,
 h3 {
   letter-spacing: 0;
+}
+
+.surface-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-hero);
+}
+
+.surface-hero::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(15, 111, 104, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 111, 104, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), transparent 70%);
+}
+
+.gradient-panel {
+  background: var(--gradient-panel);
+}
+
+.gradient-soft {
+  background: var(--gradient-soft);
+}
+
+.accent-rule {
+  background: var(--gradient-teal-pink);
+}
+
+.diagnostic-marker {
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    var(--gradient-teal-pink) border-box;
+  border: 1px solid transparent;
 }

@@ -9,7 +9,7 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.2fr_1fr]">
         <div>
           <p className="flex items-center gap-3 text-base font-semibold tracking-[0.12em] uppercase">
-            <span aria-hidden="true" className="h-2 w-2 rounded-full bg-accent" />
+            <span aria-hidden="true" className="block h-2 w-2 rounded-full accent-rule" />
             {siteContent.name}
           </p>
           <p className="mt-5 max-w-md text-sm leading-6 text-dark-muted">

@@ -8,6 +8,17 @@ export type CTA = {
   href: string;
 };
 
+export type HeroVisualPanelItem = {
+  label: string;
+  value: string;
+};
+
+export type HeroVisualPanel = {
+  eyebrow: string;
+  title: string;
+  items: HeroVisualPanelItem[];
+};
+
 export type HeroContent = {
   eyebrow: string;
   title: string;
@@ -15,6 +26,7 @@ export type HeroContent = {
   primaryCta?: CTA;
   secondaryCta?: CTA;
   proofPoints?: string[];
+  visualPanel?: HeroVisualPanel;
 };
 
 export type SectionIntro = {

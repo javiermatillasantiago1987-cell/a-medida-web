@@ -37,6 +37,28 @@ export const homePageContent: PageContent & {
       "Foco en margen, estándares de servicio, reporting y crecimiento.",
       "Planes de acción que bajan a equipo, responsables y ritmo de gestión.",
     ],
+    visualPanel: {
+      eyebrow: "Lectura operativa",
+      title: "Prioridades visibles antes de actuar",
+      items: [
+        {
+          label: "Margen",
+          value: "Visibilidad",
+        },
+        {
+          label: "Servicio",
+          value: "Criterio común",
+        },
+        {
+          label: "Equipo",
+          value: "Responsables",
+        },
+        {
+          label: "Seguimiento",
+          value: "Ritmo semanal",
+        },
+      ],
+    },
   },
   sections: {
     diagnostic: {
