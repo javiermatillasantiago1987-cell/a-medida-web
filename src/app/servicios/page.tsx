@@ -1,10 +1,10 @@
 import { CtaSection } from "@/components/sections/cta-section";
+import { CompactServiceList } from "@/components/sections/compact-service-list";
 import { PageHero } from "@/components/sections/page-hero";
 import { ServiceCards } from "@/components/sections/service-cards";
-import { ServiceEcosystemSection } from "@/components/sections/service-ecosystem-section";
 import { createPageMetadata } from "@/content/metadata";
 import {
-  serviceEcosystemSection,
+  compactServiceListSection,
   servicesPageContent,
   servicesSection,
 } from "@/content/services";
@@ -16,7 +16,7 @@ export default function ServiciosPage() {
     <>
       <PageHero {...servicesPageContent.hero} />
       <ServiceCards {...servicesSection} />
-      <ServiceEcosystemSection content={serviceEcosystemSection} />
+      <CompactServiceList content={compactServiceListSection} />
       {servicesPageContent.cta ? (
         <CtaSection content={servicesPageContent.cta} />
       ) : null}

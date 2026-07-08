@@ -92,15 +92,14 @@ export type ServiceItem = CardItem & {
   icon: IconName;
 };
 
-export type ServiceEcosystemGroup = {
+export type CompactServiceItem = {
   title: string;
   description: string;
-  items: string[];
 };
 
-export type ServiceEcosystemSection = {
+export type CompactServiceListSection = {
   intro: SectionIntro;
-  groups: ServiceEcosystemGroup[];
+  items: CompactServiceItem[];
   note?: string;
 };
 

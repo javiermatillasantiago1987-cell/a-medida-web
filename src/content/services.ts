@@ -1,7 +1,7 @@
 import type {
+  CompactServiceListSection,
   PageContent,
   SectionIntro,
-  ServiceEcosystemSection,
   ServiceItem,
 } from "@/content/types";
 
@@ -41,61 +41,67 @@ export const servicesSection: {
   ],
 };
 
-export const serviceEcosystemSection: ServiceEcosystemSection = {
+export const compactServiceListSection: CompactServiceListSection = {
   intro: {
-    eyebrow: "Ecosistema de servicios",
-    title: "Áreas donde A-Medida puede intervenir",
+    eyebrow: "Bloques de servicio",
+    title: "Servicios clave de A-Medida",
     description:
-      "A-Medida trabaja sobre las piezas que condicionan el rendimiento real de un negocio hostelero: operación, equipo, rentabilidad, comercialización, espacios, compras, digitalización y experiencia de cliente.",
+      "Trabajamos sobre las áreas que condicionan el rendimiento real de un negocio hostelero. Cada proyecto se prioriza según diagnóstico, alcance y momento del negocio.",
   },
-  groups: [
+  items: [
     {
-      title: "Operación y equipo",
+      title: "RRHH",
       description:
-        "Estandarización de rutinas, formación de equipos, seguridad alimentaria, propuesta gastronómica y consistencia del servicio.",
-      items: [
-        "Operativas y formaciones",
-        "RRHH",
-        "Seguridad alimentaria",
-        "Gastronomía",
-      ],
+        "Selección, organización, formación y seguimiento de equipos para una operación más estable.",
     },
     {
-      title: "Rentabilidad y control",
+      title: "Sector inmobiliario",
       description:
-        "Control de costes, compras, márgenes, visibilidad de datos, digitalización útil y seguimiento de prioridades.",
-      items: [
-        "Control financiero",
-        "Compras & digitalización",
-        "Reporting",
-        "Seguimiento de acciones",
-      ],
+        "Búsqueda, análisis y valoración de ubicaciones para nuevos proyectos o expansión.",
     },
     {
-      title: "Crecimiento y cliente",
+      title: "Interiorismo & reformas",
       description:
-        "Acciones comerciales, comunicación, percepción de marca, fidelización y mejora de la experiencia del cliente.",
-      items: [
-        "Marketing & comunicación",
-        "Comercialización externa",
-        "Experiencia de cliente",
-        "Recurrencia",
-      ],
+        "Definición del concepto, distribución del espacio y acompañamiento en reformas.",
     },
     {
-      title: "Espacios y expansión",
+      title: "Comercialización externa",
       description:
-        "Acompañamiento en decisiones de localización, adecuación de espacios, reformas, aperturas y evolución del concepto.",
-      items: [
-        "Sector inmobiliario",
-        "Interiorismo & reformas",
-        "Aperturas",
-        "Reposicionamiento de locales",
-      ],
+        "Acciones comerciales para captar oportunidades, alianzas y nuevos canales de venta.",
+    },
+    {
+      title: "Marketing & comunicación",
+      description:
+        "Posicionamiento, mensajes, campañas y comunicación adaptada al negocio hostelero.",
+    },
+    {
+      title: "Compras & digitalización",
+      description:
+        "Optimización de compras, proveedores, herramientas y procesos digitales útiles.",
+    },
+    {
+      title: "Seguridad alimentaria",
+      description:
+        "Revisión de criterios, controles y rutinas para asegurar cumplimiento y consistencia.",
+    },
+    {
+      title: "Gastronomía",
+      description:
+        "Diseño y mejora de carta, producto, propuesta gastronómica y rendimiento operativo.",
+    },
+    {
+      title: "Control financiero",
+      description:
+        "Seguimiento de costes, márgenes, indicadores y prioridades para la toma de decisiones.",
+    },
+    {
+      title: "Operativas y formaciones",
+      description:
+        "Estandarización de procesos, rutinas de servicio y formación práctica de equipos.",
     },
   ],
   note:
-    "No todos los proyectos necesitan actuar en todas las áreas. El diagnóstico define qué palancas conviene priorizar y cómo conectarlas en un modelo operativo útil.",
+    "No todos los proyectos requieren todos los servicios. El valor está en elegir qué bloques activar, en qué orden y con qué nivel de profundidad.",
 };
 
 export const servicesPageContent: PageContent = {
