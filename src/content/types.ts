@@ -103,6 +103,16 @@ export type CompactServiceListSection = {
   note?: string;
 };
 
+export type ClientLogo = {
+  name: string;
+  logo: string;
+  alt: string;
+  featured: boolean;
+  order: number;
+  category?: string;
+  website?: string;
+};
+
 export type MethodStep = {
   title: string;
   description: string;
