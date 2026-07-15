@@ -4,6 +4,11 @@ import { AmedidaLogo } from "@/components/brand/amedida-logo";
 import { navigationItems } from "@/content/navigation";
 import { siteContent } from "@/content/site";
 
+const footerNavigationItems = [
+  ...navigationItems,
+  { href: "/clientes", label: "Clientes" },
+];
+
 export function Footer() {
   return (
     <footer className="border-t border-dark bg-dark text-primary-foreground">
@@ -16,7 +21,7 @@ export function Footer() {
         </div>
         <nav aria-label="Navegación secundaria">
           <ul className="grid grid-cols-2 gap-3 text-sm text-primary-foreground">
-            {navigationItems.map((item) => (
+            {footerNavigationItems.map((item) => (
               <li key={item.href}>
                 <Link
                   className="transition-colors hover:text-dark-muted hover:underline"

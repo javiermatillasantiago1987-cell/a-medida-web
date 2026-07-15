@@ -7,6 +7,7 @@ Website content lives in `src/content`. The site is still static and code-manage
 - Global site metadata and footer copy: `src/content/site.ts`
 - Header and footer navigation: `src/content/navigation.ts`
 - Homepage content: `src/content/home.ts`
+- Client logo registry and client sections: `src/content/clients.ts`
 - Services page, service cards and compact service list: `src/content/services.ts`
 - Method page and method steps: `src/content/method.ts`
 - Sectors page and sector cards: `src/content/sectors.ts`
@@ -51,6 +52,8 @@ The content layer uses stable fields such as `slug`, `seo`, `hero`, `sections`, 
 Icon values are stored as string keys rather than React components. A future CMS can store the same keys, while the frontend keeps control over the actual icon components.
 
 The compact service list uses `intro`, `items` and optional contextual notes. Each item has a `title` and `description`, which keeps Fernando's recognizable service blocks visible while preserving a compact, CMS-ready structure.
+
+Client logos are registered in `src/content/clients.ts` with `name`, `logo`, `alt`, `featured`, `order`, and optional `category` or `website` fields. Source image files live in `public/clients/`. The homepage uses featured clients, while `/clientes` uses the full ordered list.
 
 ## Future CMS integration
 

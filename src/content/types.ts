@@ -113,6 +113,12 @@ export type ClientLogo = {
   website?: string;
 };
 
+export type ClientLogoSection = {
+  intro: SectionIntro;
+  items: ClientLogo[];
+  cta?: CTA;
+};
+
 export type MethodStep = {
   title: string;
   description: string;

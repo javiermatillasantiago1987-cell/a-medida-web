@@ -35,6 +35,12 @@ The site currently uses the asset-based A-Medida logo from `public/brand/amedida
 
 Use this asset as the clean brand signature in header and footer. Keep it restrained, avoid neon badge effects, preserve the transparent background and maintain enough clear space so the rounded frame remains distinctive rather than decorative clutter.
 
+## Client logo treatment
+
+Client logos must keep their original source files untouched. Use CSS-only presentation to make mixed logo assets feel cohesive: warm neutral tiles, restrained grayscale or saturation reduction, controlled opacity and contrast, and subtle teal/pink surface accents.
+
+Original color can become more visible on hover or focus. Do not crop, recolor, redraw, resize or export modified logo assets for the website.
+
 ## Photography direction for later
 
 Do not use stock imagery. Avoid posed chefs, generic waiters, fake hotel smiles, perfect corporate hospitality scenes and glossy lifestyle images.
