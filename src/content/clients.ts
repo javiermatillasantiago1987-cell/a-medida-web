@@ -71,4 +71,25 @@ export const clientLogos: ClientLogo[] = [
     featured: false,
     order: 10,
   },
+  {
+    name: "Cucurucho",
+    logo: "/clients/cucurucho.jpg",
+    alt: "Logo de Cucurucho",
+    featured: false,
+    order: 11,
+  },
+  {
+    name: "Roostiq",
+    logo: "/clients/roostiq.jpg",
+    alt: "Logo de Roostiq Organic Mood",
+    featured: false,
+    order: 12,
+  },
+  {
+    name: "Frívolos",
+    logo: "/clients/frivolos.jpg",
+    alt: "Logo de Frívolos",
+    featured: false,
+    order: 13,
+  },
 ];
