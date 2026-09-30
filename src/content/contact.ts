@@ -33,12 +33,12 @@ export const contactPageContent: PageContent & {
   },
   contact: {
     emailCta: {
-      label: "hola@a-medida.es",
-      href: "mailto:hola@a-medida.es",
+      label: "hola@somosamedida.es",
+      href: "mailto:hola@somosamedida.es",
     },
     secondaryCta: {
       label: "Enviar contexto por email",
-      href: "mailto:hola@a-medida.es?subject=Contexto%20del%20proyecto",
+      href: "mailto:hola@somosamedida.es?subject=Contexto%20del%20proyecto",
     },
     reasonsTitle: "Motivos habituales para conversar",
     reasons: [
