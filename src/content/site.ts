@@ -2,7 +2,7 @@ import type { PageCTA, SEOContent } from "@/content/types";
 
 export const siteContent = {
   name: "A-Medida",
-  url: "https://a-medida.es",
+  url: "https://www.somosamedida.es",
   locale: "es_ES",
   defaultSeo: {
     title: "A-Medida | Consultoría operativa para hospitality",
