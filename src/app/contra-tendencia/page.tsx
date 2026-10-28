@@ -28,7 +28,7 @@ export default function ContraTendenciaPage() {
               </div>
             </div>
           </div>
-          <div className="mt-17 flex items-center justify-between border-t border-[#c3d2be]/40 pt-4 text-xs tracking-[0.12em] uppercase text-[#c3d2be] md:mt-24"><span>Asesoramos / Implantamos / Seguimos</span><span>01 — 09</span></div>
+          <p className="mt-17 border-t border-[#c3d2be]/40 pt-4 text-xs tracking-[0.12em] uppercase text-[#c3d2be] md:mt-24">Asesoramos / Implantamos / Seguimos</p>
         </div>
         <span aria-hidden="true" className="retail-hero-ring" />
       </section>
