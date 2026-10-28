@@ -10,7 +10,7 @@ export function SpecializationShowcase() {
         <div className="mb-9 flex flex-wrap items-end justify-between gap-5 border-b border-foreground/20 pb-7">
           <div>
             <p className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">Especializaciones / 02</p>
-            <h2 className="mt-3 max-w-2xl text-3xl font-semibold leading-tight sm:text-4xl" id="especializaciones">Un método. Dos mundos de negocio.</h2>
+            <h2 className="mt-3 max-w-2xl text-3xl font-semibold leading-tight sm:text-4xl" id="especializaciones">Dos especializaciones. Una visión integral.</h2>
           </div>
           <p className="max-w-xs text-sm leading-6 text-muted-foreground">Cada sector tiene sus propios códigos. La forma de trabajar parte de ellos.</p>
         </div>

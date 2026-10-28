@@ -11,6 +11,7 @@ import { SectorCards } from "@/components/sections/sector-cards";
 import { ServiceCards } from "@/components/sections/service-cards";
 import { homepageClientSection } from "@/content/clients";
 import { homePageContent } from "@/content/home";
+import { hospitalityNavigationItems } from "@/content/navigation";
 import { sectorsSection } from "@/content/sectors";
 import { servicesSection } from "@/content/services";
 import { specializations } from "@/content/specializations";
@@ -27,10 +28,9 @@ export default function HosteleriaPage() {
       <PageHero {...homePageContent.hero} primaryCta={{ label: "Hablar de mi negocio", href: specializations.hosteleria.contactPath }} />
       <div className="border-b bg-card">
         <nav aria-label="Explorar hostelería" className="mx-auto flex max-w-6xl flex-wrap gap-x-7 gap-y-3 px-4 py-5 text-sm font-semibold text-primary sm:px-6">
-          <Link href="/servicios">Servicios <ArrowUpRight className="inline h-3 w-3" aria-hidden="true" /></Link>
-          <Link href="/sectores">Restaurantes, hoteles y grupos <ArrowUpRight className="inline h-3 w-3" aria-hidden="true" /></Link>
-          <Link href="/tecnologia">Tecnología <ArrowUpRight className="inline h-3 w-3" aria-hidden="true" /></Link>
-          <Link href="/clientes">Clientes <ArrowUpRight className="inline h-3 w-3" aria-hidden="true" /></Link>
+          {hospitalityNavigationItems.filter((item) => item.href !== "/hosteleria").map((item) => (
+            <Link key={item.href} href={item.href}>{item.label} <ArrowUpRight className="inline h-3 w-3" aria-hidden="true" /></Link>
+          ))}
         </nav>
       </div>
       <DiagnosticSection content={homePageContent.sections.diagnostic} />

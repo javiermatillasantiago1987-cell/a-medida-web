@@ -3,7 +3,6 @@ import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 
 import { SpecializationShowcase } from "@/components/sections/specialization-showcase";
 import { Button } from "@/components/ui/button";
-import { methodSection } from "@/content/method";
 import { siteContent } from "@/content/site";
 
 export const metadata = {
@@ -57,26 +56,6 @@ export default function Home() {
       </section>
 
       <SpecializationShowcase />
-
-      <section className="bg-dark py-16 text-[#fbf8f1] md:py-24" aria-labelledby="metodo-comun">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid gap-7 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-            <div>
-              <p className="text-xs font-semibold tracking-[0.18em] text-[#b8d7ce] uppercase">El método A-Medida</p>
-              <h2 className="mt-4 max-w-md text-3xl font-semibold leading-tight sm:text-4xl" id="metodo-comun">De entender el problema a cambiar la forma de trabajar.</h2>
-            </div>
-            <p className="max-w-xl text-base leading-7 text-[#ddd2bf]">No basta con detectar oportunidades. Priorizamos, implantamos junto al equipo y revisamos cómo evoluciona el negocio.</p>
-          </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-4">
-            {methodSection.items.map((step, index) => <article className="border-t border-[#b8d7ce]/50 pt-5" key={step.title}>
-              <span className="text-sm text-[#b8d7ce]">0{index + 1}</span>
-              <h3 className="mt-5 text-xl font-semibold">{step.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-[#ddd2bf]">{step.description}</p>
-            </article>)}
-          </div>
-          <Link className="mt-10 inline-flex items-center gap-2 border-b border-[#b8d7ce] pb-1 text-sm font-semibold text-[#b8d7ce]" href="/metodo">Conocer el método <ArrowUpRight aria-hidden="true" className="h-4 w-4" /></Link>
-        </div>
-      </section>
 
       <section className="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:px-6 md:grid-cols-[1fr_auto] md:items-end md:py-20">
         <div>
