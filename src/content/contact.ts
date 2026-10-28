@@ -23,7 +23,7 @@ export const contactPageContent: PageContent & {
   seo: {
     title: "Contacto",
     description:
-      "Contacta con A-Medida para hablar sobre operaciones, rentabilidad, experiencia de cliente o crecimiento hospitality.",
+      "Contacta con A-Medida para hablar de operaciones, equipo, experiencia de cliente y rentabilidad en hostelería o retail de moda.",
   },
   hero: {
     eyebrow: "Contacto",
@@ -44,8 +44,8 @@ export const contactPageContent: PageContent & {
     reasons: [
       "Revisar la operación antes de abrir, ordenar o escalar.",
       "Entender por qué el negocio vende pero no convierte en margen suficiente.",
-      "Alinear reporting, procesos y responsabilidades entre áreas o unidades.",
-      "Acompañar a equipos directivos en una etapa de cambio operativo.",
+      "Alinear procesos, responsabilidades y decisiones entre áreas o puntos de venta.",
+      "Acompañar a dirección y equipos en una etapa de cambio operativo.",
     ],
     response: {
       title: "Primera respuesta",

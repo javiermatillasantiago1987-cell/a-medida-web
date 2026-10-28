@@ -28,7 +28,7 @@ export function Header() {
         >
           <AmedidaLogo variant="header" />
         </Link>
-        <nav aria-label="Navegación principal" className="hidden md:block">
+        <nav aria-label="Navegación principal" className="hidden lg:block">
           <ul className="flex items-center gap-7 text-sm font-medium text-muted-foreground">
             {navigationItems.map((item) => (
               <li key={item.href}>
@@ -42,7 +42,7 @@ export function Header() {
             ))}
           </ul>
         </nav>
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Button asChild size="sm">
             <Link href={headerCta.href}>{headerCta.label}</Link>
           </Button>
@@ -51,7 +51,7 @@ export function Header() {
           aria-controls={mobileMenuId}
           aria-expanded={isMobileMenuOpen}
           aria-label={isMobileMenuOpen ? "Cerrar navegación" : "Abrir navegación"}
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setIsMobileMenuOpen((current) => !current)}
           size="sm"
           type="button"
@@ -67,8 +67,8 @@ export function Header() {
       <div
         className={
           isMobileMenuOpen
-            ? "border-t bg-background/95 shadow-sm md:hidden"
-            : "hidden border-t bg-background/95 shadow-sm md:hidden"
+            ? "border-t bg-background/95 shadow-sm lg:hidden"
+            : "hidden border-t bg-background/95 shadow-sm lg:hidden"
         }
         id={mobileMenuId}
       >
@@ -90,7 +90,7 @@ export function Header() {
             ))}
           </ul>
           {headerCta ? (
-            <Button asChild className="mt-4 w-full" size="sm">
+            <Button asChild className="mt-4" size="sm">
               <Link href={headerCta.href} onClick={closeMobileMenu}>
                 {headerCta.label}
               </Link>

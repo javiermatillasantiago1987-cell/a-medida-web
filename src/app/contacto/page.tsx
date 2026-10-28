@@ -1,12 +1,17 @@
-import { ArrowRight, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { contactPageContent } from "@/content/contact";
 import { createPageMetadata } from "@/content/metadata";
+import { specializations } from "@/content/specializations";
 
 export const metadata = createPageMetadata(contactPageContent);
 
-export default function ContactoPage() {
+export default async function ContactoPage({ searchParams }: { searchParams: Promise<{ sector?: string }> }) {
+  const { sector } = await searchParams;
+  const sectorName = sector === "hosteleria" ? "Hostelería" : sector === "contra-tendencia" ? "Contra-Tendencia / retail de moda" : null;
+  const address = "hola@somosamedida.es";
+  const emailHref = `mailto:${address}?subject=${encodeURIComponent(sectorName ? `Consulta A-Medida | ${sectorName}` : "Consulta A-Medida")}&body=${encodeURIComponent(sectorName ? `Especialización: ${sectorName}\n\nCuéntanos sobre tu negocio:\n` : "Cuéntanos sobre tu negocio:\n")}`;
   return (
     <section className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[0.95fr_1.05fr] md:py-24">
       <div>
@@ -19,22 +24,16 @@ export default function ContactoPage() {
         <p className="mt-6 text-base leading-7 text-muted-foreground">
           {contactPageContent.hero.description}
         </p>
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        {sectorName ? <p className="mt-6 inline-block border-l-2 border-primary bg-section px-4 py-2 text-sm font-semibold">Consulta sobre {sectorName}</p> : <div className="mt-6 flex flex-wrap gap-2 text-sm"><span className="mr-2 text-muted-foreground">Tu especialización:</span><a className="underline underline-offset-4" href={specializations.hosteleria.contactPath}>Hostelería</a><span aria-hidden="true">·</span><a className="underline underline-offset-4" href={specializations.retail.contactPath}>Contra-Tendencia</a></div>}
+        <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg">
-            <a href={contactPageContent.contact.emailCta.href}>
+            <a href={emailHref}>
               <Mail aria-hidden="true" className="h-4 w-4" />
-              {contactPageContent.contact.emailCta.label}
+              Escribir a {address}
             </a>
           </Button>
-          {contactPageContent.contact.secondaryCta ? (
-            <Button asChild size="lg" variant="outline">
-              <a href={contactPageContent.contact.secondaryCta.href}>
-                {contactPageContent.contact.secondaryCta.label}
-                <ArrowRight aria-hidden="true" className="h-4 w-4" />
-              </a>
-            </Button>
-          ) : null}
         </div>
+        <p className="mt-4 text-xs leading-5 text-muted-foreground">Se abrirá tu aplicación de correo con el asunto de la especialización preparado.</p>
       </div>
       <div className="space-y-5">
         <div className="rounded-lg border bg-card p-6 shadow-sm">

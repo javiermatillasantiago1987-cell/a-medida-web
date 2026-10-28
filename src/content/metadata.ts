@@ -8,7 +8,7 @@ type CreatePageMetadataOptions = {
 };
 
 export function createPageMetadata(
-  content: Pick<PageContent, "seo">,
+  content: Pick<PageContent, "seo" | "slug">,
   options: CreatePageMetadataOptions = {},
 ): Metadata {
   return {
@@ -18,12 +18,15 @@ export function createPageMetadata(
         }
       : content.seo.title,
     description: content.seo.description,
+    alternates: { canonical: `/${content.slug}` },
+    robots: process.env.VERCEL_ENV === "preview" ? { index: false, follow: false } : undefined,
     openGraph: {
       title: content.seo.title,
       description: content.seo.description,
       siteName: siteContent.name,
       locale: siteContent.locale,
       type: "website",
+      url: `/${content.slug}`,
     },
   };
 }

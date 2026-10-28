@@ -5,17 +5,17 @@ export const siteContent = {
   url: "https://www.somosamedida.es",
   locale: "es_ES",
   defaultSeo: {
-    title: "A-Medida | Consultoría operativa para hospitality",
+    title: "A-Medida | Consultoría de gestión integral",
     description:
-      "Consultoría para restaurantes, hoteles y grupos de hostelería que quieren mejorar operaciones, rentabilidad, experiencia de cliente y crecimiento.",
+      "Consultoría de gestión integral para hostelería y retail de moda. Diagnóstico, implantación y seguimiento para mejorar operaciones, equipos y rentabilidad.",
   } satisfies SEOContent,
   openGraphDescription:
-    "A-Medida ayuda a negocios de hospitality a ordenar operaciones, reporting, experiencia y crecimiento.",
+    "A-Medida acompaña a negocios de hostelería y retail de moda desde el diagnóstico hasta la implantación y el seguimiento.",
   footer: {
     description:
-      "Consultoría operativa para restaurantes, hoteles y grupos de hostelería que necesitan mejorar con criterio, método y seguimiento.",
+      "Consultoría de gestión integral para hostelería y retail de moda. Trabajamos con el negocio, los equipos y las decisiones que mueven los resultados.",
     copyright: "© 2026 A-Medida. Todos los derechos reservados.",
-    locationLine: "Madrid · Hospitality · Operaciones · Crecimiento",
+    locationLine: "Hostelería · Retail de moda · Gestión integral",
   },
 };
 

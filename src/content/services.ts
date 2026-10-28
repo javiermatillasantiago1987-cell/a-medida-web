@@ -124,7 +124,7 @@ export const servicesPageContent: PageContent = {
       "Revisamos el contexto del negocio y convertimos los frentes abiertos en una secuencia de actuación clara.",
     primaryCta: {
       label: "Contactar",
-      href: "/contacto",
+      href: "/contacto?sector=hosteleria",
     },
   },
 };

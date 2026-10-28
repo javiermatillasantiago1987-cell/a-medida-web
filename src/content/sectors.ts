@@ -49,7 +49,7 @@ export const sectorsPageContent: PageContent = {
       "Una primera conversación ayuda a entender formato, prioridades, restricciones y margen de mejora.",
     primaryCta: {
       label: "Contactar",
-      href: "/contacto",
+      href: "/contacto?sector=hosteleria",
     },
   },
 };

@@ -1,12 +1,13 @@
 import Link from "next/link";
 
 import { AmedidaLogo } from "@/components/brand/amedida-logo";
-import { navigationItems } from "@/content/navigation";
+import { hospitalityNavigationItems, navigationItems } from "@/content/navigation";
 import { siteContent } from "@/content/site";
 
 const footerNavigationItems = [
+  { href: "/", label: "A-Medida" },
   ...navigationItems,
-  { href: "/clientes", label: "Clientes" },
+  ...hospitalityNavigationItems,
 ];
 
 export function Footer() {
