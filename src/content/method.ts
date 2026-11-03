@@ -5,7 +5,7 @@ export const methodSection: {
   items: MethodStep[];
 } = {
   intro: {
-    eyebrow: "Método",
+    eyebrow: "Hostelería · Método",
     title: "De la lectura del negocio a una forma de trabajar mejor.",
   },
   items: [
@@ -35,12 +35,12 @@ export const methodSection: {
 export const methodPageContent: PageContent = {
   slug: "metodo",
   seo: {
-    title: "Método",
+    title: "Método de hostelería",
     description:
-      "Método de trabajo de A-Medida: diagnóstico, plan de actuación, implementación acompañada y seguimiento.",
+      "Método de trabajo de A-Medida para restaurantes, hoteles y grupos hosteleros: diagnóstico, plan de actuación, implementación acompañada y seguimiento.",
   },
   hero: {
-    eyebrow: "Método",
+    eyebrow: "Hostelería · Método",
     title: "Un proceso claro para convertir diagnóstico en avance operativo.",
     description:
       "La mejora no se queda en una presentación. Definimos prioridades, instalamos hábitos, medimos progreso y acompañamos al equipo hasta que el cambio se incorpora a la gestión diaria.",

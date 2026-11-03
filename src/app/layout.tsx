@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteContent.name}`,
   },
   description: siteContent.defaultSeo.description,
+  robots: process.env.VERCEL_ENV === "preview" ? { index: false, follow: false } : undefined,
   openGraph: {
     title: siteContent.defaultSeo.title,
     description: siteContent.openGraphDescription,
